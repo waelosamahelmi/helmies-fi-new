@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /offline/
+Sitemap: https://helmies-creative-studio.waelhelmi.chatgpt.site/sitemap.xml

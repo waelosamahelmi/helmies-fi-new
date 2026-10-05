@@ -1,0 +1,17 @@
+# Use together with compose.yml. Keeps the loopback-only port for diagnostics.
+services:
+  helmies:
+    networks:
+      - helmies_proxy
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: "${TRAEFIK_NETWORK}"
+      traefik.http.routers.helmies.rule: "Host(`${SITE_HOST}`)"
+      traefik.http.routers.helmies.entrypoints: "${TRAEFIK_ENTRYPOINT}"
+      traefik.http.routers.helmies.tls: "true"
+      traefik.http.routers.helmies.tls.certresolver: "${TRAEFIK_CERT_RESOLVER}"
+      traefik.http.services.helmies.loadbalancer.server.port: "8088"
+networks:
+  helmies_proxy:
+    external: true
+    name: "${TRAEFIK_NETWORK}"

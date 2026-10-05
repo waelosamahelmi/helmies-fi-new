@@ -1,0 +1,12 @@
+(()=>{
+ const filters=[...document.querySelectorAll('[data-article-filter]')],cards=[...document.querySelectorAll('.insights-directory [data-category]')];
+ filters.forEach(button=>button.addEventListener('click',()=>{const category=button.dataset.articleFilter;filters.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));let count=0;cards.forEach(card=>{card.hidden=category!=='All'&&card.dataset.category!==category;if(!card.hidden)count++});document.querySelector('#journal-count').textContent=`${count} ${count===1?'article':'articles'}`}));
+ const read=()=>{try{return localStorage.getItem('helmies-offline')==='on'}catch{return false}};
+ const status=()=>{const el=document.querySelector('#offline-status');if(el)el.textContent=read()?'Offline pages are enabled on this device.':'Offline pages are disabled on this device.';document.querySelectorAll('[data-offline]').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.offline==='on')===read())))};
+ async function clearOffline(){if('serviceWorker'in navigator){const registrations=await navigator.serviceWorker.getRegistrations();for(const reg of registrations){const worker=reg.active||reg.waiting||reg.installing;if(worker&&new URL(worker.scriptURL).pathname==='/sw.js')await reg.unregister()}}if('caches'in window)for(const name of await caches.keys())if(name.startsWith('helmies-'))await caches.delete(name)}
+ async function change(enabled){try{localStorage.setItem('helmies-offline',enabled?'on':'off');if(enabled){if(!('serviceWorker'in navigator)||!window.isSecureContext)throw Error('unavailable');await navigator.serviceWorker.register('/sw.js',{scope:'/'});}else await clearOffline();status()}catch{try{localStorage.setItem('helmies-offline','off')}catch{}const el=document.querySelector('#offline-status');if(el)el.textContent='This browser could not complete the change. Use its site-data settings to clear saved pages.'}}
+ document.querySelectorAll('[data-offline]').forEach(b=>b.addEventListener('click',()=>change(b.dataset.offline==='on')));
+ document.querySelector('#reset-site-preferences')?.addEventListener('click',async()=>{await change(false);try{localStorage.removeItem('helmies-motion');sessionStorage.removeItem('helmies-announcement-v2')}catch{}document.querySelector('#reset-status').textContent='Helmies preferences reset. Reload this page to apply the default motion and announcement settings.'});
+ // Remove caches left by older automatic-offline versions unless the visitor opted in.
+ if(!read())clearOffline().catch(()=>{});status();
+})();

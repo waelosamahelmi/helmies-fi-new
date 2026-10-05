@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "esbuild": "0.25.10",
+    "three": "0.180.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "python src/build.py && esbuild src/brand-scene.js --bundle --minify --format=iife --target=es2020 --outfile=dist/scene.js"
+  },
+  "type": "module"
+}

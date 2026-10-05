@@ -1,0 +1,44 @@
+# Helmies Oy
+
+> Independent creative technology studio based in Finland, founded by Wael Helmi. Working remotely in English, Finnish, and Arabic.
+
+Contact: info@helmies.fi
+
+## Services
+- [AI solutions](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/ai-solutions/): Custom AI assistants, knowledge systems, and practical AI solutions for the way your business actually works.
+- [Automations](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/automations/): Workflow automation and API integrations that connect your tools and reduce repetitive manual work.
+- [Apps & platforms](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/apps/): Custom web apps, business platforms, and mobile experiences designed around the people who use them.
+- [Websites & e-commerce](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/websites/): Distinctive business websites, online stores, and digital experiences with clear journeys and a strong technical foundation.
+- [Brand strategy & identity](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/branding/): Brand strategy, visual identity, and design systems that give your business a distinctive and consistent presence.
+- [Graphic design](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/graphic-design/): Graphic design for print, packaging, presentations, social content, and everyday brand communication.
+- [Film & video](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/film-video/): Films, brand videos, commercials, animation, and AI-assisted production shaped by cinematic storytelling.
+- [Music & sound](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/music-sound/): Music, sound design, sonic branding, and AI-assisted composition for films, brands, and digital experiences.
+- [Ads & campaigns](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/ads-campaigns/): Campaign concepts, advertising creative, social content, and landing experiences that connect the message across channels.
+- [3D & interactive](https://helmies-creative-studio.waelhelmi.chatgpt.site/services/3d-experiences/): Interactive 3D, motion-rich web experiences, and dimensional brand visuals that invite people to explore.
+
+## Site pages
+- [Creative technology, AI & design studio](https://helmies-creative-studio.waelhelmi.chatgpt.site/): Helmies is a Finland-based studio for AI, automation, apps, websites, films, music, branding and advertising. Human imagination. Intelligent possibilities.
+- [About the studio & Wael Helmi](https://helmies-creative-studio.waelhelmi.chatgpt.site/studio/): Meet Helmies, a Finland-based creative technology studio founded by designer and developer Wael Helmi.
+- [Our creative & development process](https://helmies-creative-studio.waelhelmi.chatgpt.site/approach/): Discover how Helmies works: discovery, creative direction, production, launch and the next stage of your project.
+- [Blog & insights on design, AI and digital products](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/): Original Helmies guides on websites, app planning, branding, AI, automation and filmmaking.
+- [How to write a website brief that gets useful answers.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/website-brief-that-gets-results/): A practical brief for a website that serves your audience, your team, and your next stage of growth.
+- [Your first app does not need every feature.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/first-version-of-your-app/): How to define a first release around one complete journey instead of an impressive feature list.
+- [An automation is only as good as its recovery plan.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/automation-needs-an-owner/): Duplicate events, failed connections, and changed data: plan for the moments when a workflow needs help.
+- [What belongs in a brand handover?](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/brand-handover-that-works/): The files, examples, and everyday rules that help a visual identity stay consistent after launch.
+- [A better enquiry form starts with fewer questions.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/designing-forms-people-finish/): Design a first-contact flow that respects attention and gives you enough context for a useful reply.
+- [Continuity makes an AI-assisted film feel like a film.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/ai-film-continuity/): A practical reference system for characters, locations, props, camera direction, and the edit.
+- [When motion helps a website—and when it gets in the way.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/designing-with-motion/): Give animation a purpose, keep the reading experience intact, and design a quieter alternative.
+- [Before an AI assistant, put your knowledge in order.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/prepare-your-content-for-ai/): A practical content review for teams planning an assistant that answers from internal information.
+- [What should your business automate first?](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/what-to-automate-first/): A practical way to identify repetitive work worth automating, without making a complicated process more complicated.
+- [Your brand is bigger than its logo.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/a-brand-beyond-the-logo/): How typography, color, imagery, and everyday decisions turn a visual identity into a consistent experience.
+- [A stronger film starts before the first frame.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/from-storyboard-to-screen/): Why a treatment, visual references, and a shot plan matter in both traditional and AI-assisted filmmaking.
+- [Useful AI begins with a smaller question.](https://helmies-creative-studio.waelhelmi.chatgpt.site/insights/designing-useful-ai/): How a focused task, good information, and visible limits can make an AI feature more useful.
+- [Start a project with Helmies](https://helmies-creative-studio.waelhelmi.chatgpt.site/contact/): Discuss your next AI, automation, digital or creative project with Helmies. Email info@helmies.fi or prepare a project brief.
+- [Helmies Labs — upcoming SaaS products](https://helmies-creative-studio.waelhelmi.chatgpt.site/products/): Explore Helmies Studio, an upcoming conversational AI creative workspace from Helmies Labs.
+- [Helmies Studio — upcoming creative AI workspace](https://helmies-creative-studio.waelhelmi.chatgpt.site/products/helmies-studio/): Discover the vision for Helmies Studio: one conversational workspace for image, video, music, voice, brand assets, and creative workflows.
+- [Privacy & GDPR](https://helmies-creative-studio.waelhelmi.chatgpt.site/privacy/): How Helmies handles website visits, enquiries, browser data, and personal-data requests.
+- [Cookies & device preferences](https://helmies-creative-studio.waelhelmi.chatgpt.site/cookies/): Understand and manage Helmies browser preferences and optional offline pages.
+- [Frequently asked questions](https://helmies-creative-studio.waelhelmi.chatgpt.site/faq/): Answers about starting a Helmies project, budgets, revisions, content, handover and support.
+
+## Important context
+Pricing and timelines are agreed per project. The brief builder only prepares an email; visitors review and send it themselves. The website provides structured service pages and this text summary for AI readers.

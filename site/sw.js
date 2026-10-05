@@ -1,0 +1,14 @@
+'use strict';
+const CACHE='helmies-v11-cms-20261005',STATIC=['/','/services/','/products/','/offline/','/style.css','/cinema.css?v=7','/app.js?v=10','/search-index.json?v=10','/content.css?v=10','/content.js?v=10','/scene.js?v=7','/founder.css?v=9','/founder.js?v=9','/navigator.js','/assets/helmies-mark.png','/assets/icon-transparent-192.png','/assets/dm-sans-400.ttf','/assets/dm-sans-500.ttf'];
+self.addEventListener('install',event=>{event.waitUntil((async()=>{const cache=await caches.open(CACHE);await Promise.all(STATIC.map(async path=>{try{const response=await fetch(path,{cache:'reload'});if(response.ok&&!response.redirected){if(path.endsWith('/')){const text=await response.clone().text();if(!text.includes('name="helmies-page"'))return}await cache.put(path,response)}}catch{}}));await self.skipWaiting()})())});
+self.addEventListener('activate',event=>{event.waitUntil((async()=>{for(const name of await caches.keys())if(name.startsWith('helmies-')&&name!==CACHE)await caches.delete(name);await self.clients.claim()})())});
+self.addEventListener('fetch',event=>{
+ const request=event.request,url=new URL(request.url);if(['/admin','/api','/unsubscribe'].some(prefix=>url.pathname===prefix||url.pathname.startsWith(prefix+'/')))return;if(request.method!=='GET'||url.origin!==self.location.origin||(url.search&&!((url.search==='?v=7'&&['/cinema.css','/scene.js'].includes(url.pathname))||(url.search==='?v=10'&&['/app.js','/search-index.json','/content.css','/content.js'].includes(url.pathname))||(url.search==='?v=9'&&['/founder.css','/founder.js'].includes(url.pathname)))))return;
+ if(request.mode==='navigate'){
+  event.respondWith((async()=>{const cache=await caches.open(CACHE);try{const response=await fetch(request);if(response.ok&&!response.redirected&&response.headers.get('content-type')?.includes('text/html')){const html=await response.clone().text();if(html.includes('name="helmies-page"'))await cache.put(request,response.clone())}return response}catch{return await cache.match(request)||await cache.match('/offline/')||new Response('You are offline. Reconnect to explore Helmies.',{status:503,headers:{'Content-Type':'text/plain'}})}})());return;
+ }
+ if(url.pathname.endsWith('.mp4'))return;
+ if(url.pathname.startsWith('/assets/')||['/style.css','/content.css','/content.js','/cinema.css','/app.js','/scene.js','/navigator.js','/founder.css','/founder.js','/search-index.json','/manifest.webmanifest'].includes(url.pathname)){
+  event.respondWith((async()=>{const cache=await caches.open(CACHE);const cached=await cache.match(request);if(cached)return cached;try{const response=await fetch(request);if(response.ok&&!response.redirected&&!response.headers.get('content-type')?.includes('text/html'))await cache.put(request,response.clone());return response}catch{return new Response('',{status:503})}})());
+ }
+});
